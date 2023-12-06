@@ -1,5 +1,5 @@
-// import { todoManagement } from '../lib/todoManagement.js'
-// import { todoUserInterface } from '../UI/todoList.js'
+import { todoManagement } from '../lib/todoManagement.js'
+import { todoUserInterface } from '../UI/todoList.js'
 // const { showTodoItem, showNumberOfDone, showNumberOfNotDone, removeTodoItem } =
 //   todoUserInterface()
 // const {
@@ -14,8 +14,8 @@
 //   clearTodo
 // } = todoManagement()
 
-const todoManagement = require('../lib/todoManagement.js')
-const todoUserInterface = require('../UI/todoList.js')
+// const todoManagement = require('../lib/todoManagement.js')
+// const todoUserInterface = require('../UI/todoList.js')
 
 const { showTodoItem, showNumberOfDone, showNumberOfNotDone, removeTodoItem } =
   todoUserInterface()
@@ -111,18 +111,18 @@ const loadHandler = () => {
   })
 }
 
-// export {
-//   addTodoHandler,
-//   notDoneButtonHandler,
-//   removeButtonHandler,
-//   beforeUnloadHandler,
-//   loadHandler
-// }
-
-module.exports = {
+export {
   addTodoHandler,
   notDoneButtonHandler,
   removeButtonHandler,
   beforeUnloadHandler,
   loadHandler
 }
+
+// module.exports = {
+//   addTodoHandler,
+//   notDoneButtonHandler,
+//   removeButtonHandler,
+//   beforeUnloadHandler,
+//   loadHandler
+// }
